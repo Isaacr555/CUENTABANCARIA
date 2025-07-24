@@ -7,7 +7,7 @@ CuentaBancaria::CuentaBancaria(const std::string& titular, double saldoInicial, 
     this->saldo = saldoInicial;
     this->tasaInteres = tasaInteresAnual;
     std::cout << "Cuenta de " << titular << " creada con saldo inicial de " 
-              << saldoInicial << " y tasa de interés de " << tasaInteresAnual << "%" << std::endl;
+              << saldoInicial << " y tasa de interes de " << tasaInteresAnual << "%" << std::endl;
 }
 
 // Destructor
@@ -63,8 +63,8 @@ void CuentaBancaria::setTitular(const std::string& titular) {
 void CuentaBancaria::setTasaInteres(double tasaInteres) {
     if (tasaInteres >= 0) {
         this->tasaInteres = tasaInteres;
-        std::cout << "Nueva tasa de interés establecida: " << tasaInteres << "%" << std::endl;
+        std::cout << "Nueva tasa de interes establecida: " << tasaInteres << "%" << std::endl;
     } else {
-        std::cout << "La tasa de interés no puede ser negativa." << std::endl;
+        std::cout << "La tasa de interes no puede ser negativa." << std::endl;
     }
 }

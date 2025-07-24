@@ -17,9 +17,9 @@ public:
     ~CuentaBancaria();
 
     // Métodos públicos
-    void depositar(double cantidad);
-    bool retirar(double cantidad);
-    double calcularInteresAnual() const;
+    void depositar(double cantidad);             // Agrega dinero a la cuenta
+    bool retirar(double cantidad);               // Retira dinero si hay fondos suficientes
+    double calcularInteresAnual() const;         // Devuelve el interés anual estimado
 
     // Métodos get
     std::string getTitular() const;
@@ -32,3 +32,4 @@ public:
 };
 
 #endif
+

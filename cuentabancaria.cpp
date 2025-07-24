@@ -1,0 +1,28 @@
+#include <iostream>
+#include "CuentaBancaria.h"
+
+int main() {
+    // Crear una cuenta bancaria
+    CuentaBancaria cuenta("Juan Pérez", 5000.0, 5.0);
+
+    // Mostrar saldo e interés anual estimado
+    std::cout << "Saldo inicial: " << cuenta.getSaldo() << std::endl;
+    std::cout << "Interés anual estimado: " << cuenta.calcularInteresAnual() << std::endl;
+
+    // Realizar algunas operaciones
+    cuenta.depositar(1000.0);  // Depositar dinero
+    cuenta.retirar(500.0);     // Retirar dinero
+
+    // Mostrar saldo final e interés anual
+    std::cout << "Saldo final: " << cuenta.getSaldo() << std::endl;
+    std::cout << "Interés anual estimado: " << cuenta.calcularInteresAnual() << std::endl;
+
+    // Cambiar la tasa de interés
+    cuenta.setTasaInteres(6.0);
+
+    // Crear otra cuenta bancaria para probar el funcionamiento del setTitular
+    CuentaBancaria cuenta2("María López", 3000.0, 4.0);
+    cuenta2.setTitular("Ana Rodríguez");  // Modificar titular
+
+    return 0;
+}  

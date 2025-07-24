@@ -6,15 +6,14 @@ CuentaBancaria::CuentaBancaria(const std::string& titular, double saldoInicial, 
     this->titular = titular;
     this->saldo = saldoInicial;
     this->tasaInteres = tasaInteresAnual;
-    std::cout << "Cuenta de " << titular << " creada con saldo inicial de " << saldoInicial << " y tasa de interés de " << tasaInteresAnual << "%" << std::endl;
+    std::cout << "Cuenta de " << titular << " creada con saldo inicial de " 
+              << saldoInicial << " y tasa de interés de " << tasaInteresAnual << "%" << std::endl;
 }
 
 // Destructor
 CuentaBancaria::~CuentaBancaria() {
     std::cout << "La cuenta de " << titular << " ha sido cerrada." << std::endl;
 }
-
-// Métodos públicos
 
 // Depositar dinero en la cuenta
 void CuentaBancaria::depositar(double cantidad) {

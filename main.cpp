@@ -3,11 +3,11 @@
 
 int main() {
     // Crear una cuenta bancaria
-    CuentaBancaria cuenta("Juan Pérez", 5000.0, 5.0);
+    CuentaBancaria cuenta("Juan Perez", 5000.0, 5.0);
 
     // Mostrar saldo e interés anual estimado
     std::cout << "Saldo inicial: " << cuenta.getSaldo() << std::endl;
-    std::cout << "Interés anual estimado: " << cuenta.calcularInteresAnual() << std::endl;
+    std::cout << "Interes anual estimado: " << cuenta.calcularInteresAnual() << std::endl;
 
     // Realizar algunas operaciones
     cuenta.depositar(1000.0);  // Depositar dinero
@@ -21,8 +21,8 @@ int main() {
     cuenta.setTasaInteres(6.0);
 
     // Crear otra cuenta bancaria y modificar el titular
-    CuentaBancaria cuenta2("María López", 3000.0, 4.0);
-    cuenta2.setTitular("Ana Rodríguez");
+    CuentaBancaria cuenta2("Maria Lopez", 3000.0, 4.0);
+    cuenta2.setTitular("Ana Rodriguez");
 
     return 0;
 }

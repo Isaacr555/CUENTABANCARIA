@@ -20,9 +20,10 @@ int main() {
     // Cambiar la tasa de interés
     cuenta.setTasaInteres(6.0);
 
-    // Crear otra cuenta bancaria para probar el funcionamiento del setTitular
+    // Crear otra cuenta bancaria y modificar el titular
     CuentaBancaria cuenta2("María López", 3000.0, 4.0);
-    cuenta2.setTitular("Ana Rodríguez");  // Modificar titular
+    cuenta2.setTitular("Ana Rodríguez");
 
     return 0;
-}  
+}
+
